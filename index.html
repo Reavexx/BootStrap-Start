@@ -8,8 +8,17 @@
   </head>
   <body>
     <h1>Guten Tag!</h1>
-    <button id="popoverButton" type="button" class="btn btn-primary btn-lg" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="ESM in Browser" data-bs-content="Bang!">NPC Action</button>
-
+    
+    <div class="alert alert-success">
+      <strong>Erfolg!</strong> Wird aktiviert.
+    </div>
+    <div class="container mt-3">
+      <h2>Animierter Progress Bar</h2>
+      
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+      </div>
+    </div>
     <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
     <script type="importmap">
     {
@@ -21,7 +30,7 @@
     </script>
     <script type="module">
       import * as bootstrap from 'bootstrap'
-
+      
       new bootstrap.Popover(document.getElementById('popoverButton'))
     </script>
   </body>
